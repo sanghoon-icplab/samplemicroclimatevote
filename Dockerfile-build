@@ -1,5 +1,6 @@
 ENV JAVA_VERSION_PREFIX 1.8.0
 
+USER root
 RUN set -eux; \
     ARCH="$(dpkg --print-architecture)"; \
     case "${ARCH}" in \
